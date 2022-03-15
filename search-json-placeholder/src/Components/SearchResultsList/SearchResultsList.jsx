@@ -16,7 +16,7 @@ const SearchResultsList = ({ userList, postList }) => {
             {post.title}
             <Link to={`/posts/${post.id}`}>
                 <button id={post.id} onClick={() => {}}>
-                    SEE THE POST DETAILS{' '}
+                    SEE THE POST DETAILS
                 </button>
             </Link>
         </div>
