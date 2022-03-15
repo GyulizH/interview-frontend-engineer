@@ -11,6 +11,7 @@ export const fetchPosts = () => {
             dispatch({ type: FETCH_POSTS, payload: posts });
         } catch (e) {
             console.log(e);
+            throw e;
         }
     };
 };
@@ -25,6 +26,7 @@ export const fetchPost = (id) => {
             dispatch({ type: FETCH_POST, payload: post });
         } catch (e) {
             console.log(e);
+            throw e;
         }
     };
 };
