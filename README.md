@@ -16,6 +16,10 @@ After cloning the git repo and switching to gyuliz-hadzhieva-challenge
 
 First install the dependencies by using either of the commands above.
 
+### dependencies
+- node v16.x.x 
+- yarn 
+
 `yarn start`
 
 Runs the app in the development mode.
