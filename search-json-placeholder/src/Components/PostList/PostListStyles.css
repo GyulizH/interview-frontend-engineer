@@ -1,0 +1,11 @@
+.post-list-container {
+    width: 50%;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    transform: translateX(50%);
+    border: 1px solid black;
+    margin: 0 auto;
+    overflow: scroll;
+    z-index: 9;
+}

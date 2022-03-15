@@ -1,0 +1,35 @@
+.list-container {
+    width: 50%;
+    height: 800px;
+    position: absolute;
+    left: 0;
+    transform: translateX(50%);
+    border: 1px solid black;
+    margin: 0 auto;
+    overflow: scroll;
+    z-index: 9;
+}
+
+.list-element {
+    border-bottom: 1px solid black;
+}
+
+.list-element button {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.post-list-element {
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid black;
+    flex-direction: column;
+    padding: 20px;
+    font-weight: bold;
+    background-color: lightgrey;
+}
+
+.post-list-element button {
+    margin-top: 10px;
+    padding: 15px;
+}
