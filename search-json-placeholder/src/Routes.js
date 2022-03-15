@@ -1,14 +1,13 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import SearchPage from './Components/SearchPage/SearchPage';
-import PostList from './Components/PostList/PostList';
-import PostDetails from './Components/PostDetails/PostDetails';
-import UserDetails from './Components/UserDetails/UserDetails';
-import ErrorPage from './Components/ErrorPage/ErrorPage';
+import { SearchPage } from './Components/SearchPage/SearchPage';
+import { PostList } from './Components/PostList/PostList';
+import { PostDetails } from './Components/PostDetails/PostDetails';
+import { UserDetails } from './Components/UserDetails/UserDetails';
+import { ErrorPage } from './Components/ErrorPage/ErrorPage';
 
-const AppRoutes = () => (
-    <Router>
+export const AppRoutes = () => (
+    <BrowserRouter>
         <Routes>
             <Route path="/" exact element={<SearchPage />} />
             <Route path="/postsByUser/:userId" element={<PostList />} />
@@ -16,7 +15,5 @@ const AppRoutes = () => (
             <Route path="/users/:userId" element={<UserDetails />} />
             <Route path="*" element={<ErrorPage />} />
         </Routes>
-    </Router>
+    </BrowserRouter>
 );
-
-export default AppRoutes;

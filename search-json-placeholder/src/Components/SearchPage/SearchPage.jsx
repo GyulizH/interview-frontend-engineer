@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import Input from '../Input/Input';
+import { Input } from '../Input/Input';
 import { useSelector } from 'react-redux';
-import SearchResultsList from '../SearchResultsList/SearchResultsList';
+import { SearchResultsList } from '../SearchResultsList/SearchResultsList';
 
 import './SearchPageStyles.css';
 
-const SearchPage = () => {
+export const SearchPage = () => {
     const [searchedUsers, setSearchedUsers] = useState([]);
     const [searchedPosts, setSearchedPosts] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -74,5 +74,3 @@ const SearchPage = () => {
         </div>
     );
 };
-
-export default SearchPage;

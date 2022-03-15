@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import './PostListStyles.css';
 
-const PostList = () => {
+export const PostList = () => {
     //No persistent redux state on page refresh
     const { userId } = useParams();
     const users = useSelector((state) => state?.allUsers?.users);
@@ -42,5 +42,3 @@ const PostList = () => {
         </div>
     );
 };
-
-export default PostList;

@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { fetchPost } from '../../Store/Actions/post';
 import { useDispatch, useSelector } from 'react-redux';
 
-const PostDetails = () => {
+export const PostDetails = () => {
     const { postId } = useParams();
     const dispatch = useDispatch();
     const [isLoading, setIsLoading] = useState(false);
@@ -26,5 +26,3 @@ const PostDetails = () => {
         </div>
     );
 };
-
-export default PostDetails;

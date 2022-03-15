@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import ReduxThunk from 'redux-thunk';
 import { postReducer } from './Store/Reducers/posts';
 import { userReducer } from './Store/Reducers/users';
-import App from './App';
+import { App } from './App';
 
 export const createTestStore = () =>
     createStore(
@@ -23,12 +23,12 @@ describe('App component', () => {
     });
 
     it('should render App component correctly', () => {
-        const result = render(
+        const { container } = render(
             <Provider store={store}>
                 <App />
             </Provider>
         );
 
-        expect(result.container).toMatchSnapshot();
+        expect(container).toMatchSnapshot();
     });
 });

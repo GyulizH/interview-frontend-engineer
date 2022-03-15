@@ -2,7 +2,7 @@ import React from 'react';
 import { debounce } from '../../Utils';
 import './InputStyles.css';
 
-const Input = ({ onChange, placeholder, type }) => {
+export const Input = ({ onChange, placeholder, type }) => {
     const handleChange = (e) => {
         let searchTerm = e.target.value;
         debounce((searchTerm) => {
@@ -22,5 +22,3 @@ const Input = ({ onChange, placeholder, type }) => {
         </div>
     );
 };
-
-export default Input;

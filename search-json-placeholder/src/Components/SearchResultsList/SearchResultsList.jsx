@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import UserCart from '../UserCart/UserCart';
+import { UserCart } from '../UserCart/UserCart';
 
 import './SearchResultsList.css';
 
-const SearchResultsList = ({ userList, postList }) => {
+export const SearchResultsList = ({ userList, postList }) => {
     const userListItems = userList.map((item) => (
         //object fields might be absent
         <UserCart user={item} />
@@ -30,5 +30,3 @@ const SearchResultsList = ({ userList, postList }) => {
         </div>
     );
 };
-
-export default SearchResultsList;
